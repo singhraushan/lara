@@ -8,12 +8,27 @@
   <name>Lara_Xml_Hibernate Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
+  
+	  <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+	  <dependency>
+	  <groupId>org.hibernate</groupId>
+	  <artifactId>hibernate-core</artifactId>
+	  <version>5.3.1.Final</version>
+	  </dependency>
+	  
+	  <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+	  <dependency><groupId>org.postgresql</groupId>
+	  <artifactId>postgresql</artifactId>
+	  <version>9.4-1200-jdbc41</version>
+	  </dependency>
+  
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    
   </dependencies>
   <build>
     <finalName>Lara_Xml_Hibernate</finalName>

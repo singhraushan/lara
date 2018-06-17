@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+    <hibernate-mapping>
+        <class name="com.rau.lara.hibernate.pojo.Employee" table="employee">
+            <id name="id" column="ID" type="java.lang.Integer"/>
+            <property name="name" column="name" type="java.lang.String"/>
+            <property name="pin_code" column="pin_code" type="java.lang.String"/>
+            <property name="address" column="address" type="java.lang.String"/>
+        </class>
+    </hibernate-mapping>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+    
+    <hibernate-mapping package="com.rau.lara.hibernate.pojo">
+    
+        <class name="Person" table="PERSON">
+            <id name="id" column="P_ID">
+             <generator class="native"></generator>  <!--  for same sequence  -->
+            </id>
+            <property name="firstName" />
+            <property name="lastName" />
+            <property name="age" />
+        </class>
+        
+        <sql-query name="q1">
+             <return-scalar column="firstName" type="java.lang.String"/>
+             <return-scalar column="lastName" type="java.lang.String"/>
+             <return-scalar column="age" type="int"/>
+             SELECT * FROM PERSON  
+        </sql-query>
+        
+        <sql-query name="q2">
+          SELECT * FROM PERSON
+        </sql-query>
+        
+        <sql-query name="q3">
+          SELECT * FROM PERSON WHERE age>:param1
+        </sql-query>
+        
+        <sql-query name="q4">
+          SELECT * FROM PERSON WHERE age>:param1 and lastName=:param2
+        </sql-query>
+        
+    </hibernate-mapping>
+    

@@ -1,3 +1,6 @@
+If you're not using Spring then you've to commit the transaction(delete,update and insert). 
+
+
 Technology used: Hibernate,Maven,mysql,xml,java
 Steps:
 1.cfg.xml file: database configuration

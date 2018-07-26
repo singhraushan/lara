@@ -1,0 +1,8 @@
+package com.rau.lara.coreJava.collections.part1;
+
+public class E {
+  public static void main(String[] args) {
+	int[] x= new int[3];
+	System.out.println(x[3]);
+}
+}
